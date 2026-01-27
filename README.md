@@ -11,6 +11,9 @@ Projetado para ser utilizado via **Rede Wi-Fi Local**, permitindo o controle pel
   <img src="assets/home.png" width="30%" alt="Home">
   <img src="assets/treino.png" width="30%" alt="Treino">
   <img src="assets/evolução.png" width="30%" alt="Evolução">
+  <img src="assets/novo.png" width="30%" alt="Exercício">
+  <img src="assets/exercicios.png" width="30%" alt="Exercícios">
+  <img src="assets/exerciciosad.png" width="30%" alt="todosExercicios">
 </div>
 ## 🚀 Funcionalidades
 
