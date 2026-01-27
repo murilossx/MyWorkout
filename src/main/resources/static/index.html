@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montar Rotinas - MyWorkout</title>
+    <link rel="stylesheet" href="/css/style.css">   
+</head>
+<body>
+
+   <nav>
+       <a href="/gerenciar_exercicios.html">➕ Exercícios</a>
+       <a href="/treinar.html">💪 TREINAR</a>
+       <a href="/evolucao.html">📈 Evolução</a>
+   </nav>
+
+   <h1 id="title">🔧 Montador de Treinos</h1>
+
+   <div class="painel">
+       <h2>1. Criar Nova Rotina</h2>
+       <label>Nome da Rotina:</label>
+       <input type="text" id="nomeRotina" placeholder="Ex: Treino A - Peito e Tríceps">
+       <button onclick="criarRotina()">Criar Rotina</button>
+   </div>
+
+   <div class="painel">
+       <h2>2. Editar Rotina</h2>
+       <p>Selecione a rotina para ver ou adicionar exercícios:</p>
+       
+       <select id="selectRotina" onchange="carregarItensDaRotina()">
+           <option value="">-- Carregando... --</option>
+       </select>
+
+       <div id="itensRotina" style="margin-top: 15px;">
+           <p style="color: #666;">(Os exercícios desta rotina aparecerão aqui)</p>
+       </div>
+   </div>
+
+   <div class="painel">
+       <h2>3. Banco de Exercícios</h2>
+       <label>Filtrar por Grupo Muscular:</label>
+       <select id="filtroGrupo" onchange="buscarExercicios()">
+           <option value="">Todos</option>
+           <option value="Peito">Peito</option>
+           <option value="Costas">Costas</option>
+           <option value="Quadríceps">Quadríceps</option>
+           <option value="Posterior">Posterior</option>
+           <option value="Ombros">Ombros</option>
+           <option value="Bíceps">Bíceps</option>
+           <option value="Tríceps">Tríceps</option>
+           <option value="Abdômen">Abdômen</option>
+       </select>
+
+       <div id="listaExercicios" class="grid-exercicios">
+           <p style="color: #888; grid-column: 1/-1; text-align: center;">
+               Selecione um grupo acima para ver os exercícios.
+           </p>
+       </div>
+   </div>
+
+   <script src="/js/home.js"></script>
+</body>
+</html>

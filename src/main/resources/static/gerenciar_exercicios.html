@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWorkout - Cadastrar</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="/">🏠 Voltar para Home</a>
+        <a href="/treinar.html">💪 Treinar</a>
+    </nav>
+
+    <h1>🏋️ Gerenciar Exercícios</h1>
+
+    <div class="card">
+        <h2>Novo Exercício</h2>
+        <form id="formExercicio">
+            <label>Nome do Exercício:</label>
+            <input type="text" id="nome" placeholder="Ex: Agachamento Livre" required>
+
+            <label>Grupo Muscular:</label>
+            <select id="grupoMuscular">
+                <option value="Peito">Peito</option>
+                <option value="Costas">Costas</option>
+                <option value="Quadríceps">Quadríceps</option>
+                <option value="Posterior">Posterior de Perna</option>
+                <option value="Panturrilha">Panturrilha</option>
+                <option value="Ombros">Ombros</option>
+                <option value="Bíceps">Bíceps</option>
+                <option value="Tríceps">Tríceps</option>
+                <option value="Abdômen">Abdômen</option>
+            </select>
+
+            <label>Link do Vídeo (Youtube):</label>
+            <input type="text" id="linkVideo" placeholder="Cole o link aqui">
+
+            <label>Descrição/Dica:</label>
+            <textarea id="descricao" placeholder="Ex: Manter a coluna reta..." style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+
+            <button type="submit" class="add-btn">SALVAR EXERCÍCIO</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <label for="filtroGrupo">🔍 Filtrar Lista:</label>
+        <select id="filtroGrupo" onchange="carregarExercicios()">
+            <option value="">Todos os Grupos</option>
+            <option value="Peito">Peito</option>
+            <option value="Costas">Costas</option>
+            <option value="Quadríceps">Quadríceps</option>
+            <option value="Posterior">Posterior de Perna</option>
+            <option value="Panturrilha">Panturrilha</option>
+            <option value="Ombros">Ombros</option>
+            <option value="Bíceps">Bíceps</option>
+            <option value="Tríceps">Tríceps</option>
+            <option value="Abdômen">Abdômen</option>
+        </select>
+    </div>
+
+    <div id="listaExercicios"></div>
+
+    <script src="js/gerenciar_exercicios.js"></script>
+</body>
+</html>

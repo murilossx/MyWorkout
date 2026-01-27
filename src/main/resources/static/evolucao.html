@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Evolução - MyWorkout</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="/">🏠 Home</a>
+        <a href="/treinar.html">💪 Treinar</a>
+    </nav>
+
+    <h1>📈 Evolução de Carga</h1>
+
+    <div class="card">
+        <label>Selecione o exercício:</label>
+        <select id="selectExercicio" onchange="carregarGrafico()">
+            <option value="">-- Escolha um exercício --</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <canvas id="meuGrafico"></canvas>
+    </div>
+
+    <script src="/js/evolucao.js"></script>
+</body>
+</html>
