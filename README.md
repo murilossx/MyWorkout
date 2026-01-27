@@ -7,12 +7,16 @@ Projetado para ser utilizado via **Rede Wi-Fi Local**, permitindo o controle pel
 ---
 
 ## 📸 Demonstração
-
+<div align="center">
+  <img src="assets/home.png" width="30%" alt="Home">
+  <img src="assets/treino.png" width="30%" alt="Treino">
+  <img src="assets/evolução.png" width="30%" alt="Evolução">
+</div>
 ## 🚀 Funcionalidades
 
 - **📚 Banco de Exercícios:** Cadastro completo com nome, grupo muscular e link para vídeo demonstrativo (YouTube).
 - **📝 Montagem de Rotinas:** Criação de fichas personalizadas (Ex: Treino A, B, C) adicionando exercícios do banco.
-- **💪 Modo Treino (Execution):** - Interface otimizada para celular.
+- **💪 Modo Treino:** - Interface otimizada para celular.
     - Histórico automático: O sistema sugere a carga usada no treino anterior.
     - Cronologia do dia: Lista as séries já realizadas na sessão atual.
 - **📈 Dashboard de Evolução:** Gráficos interativos (Chart.js) que mostram a progressão de carga de cada exercício ao longo do tempo.
@@ -31,24 +35,13 @@ Projetado para ser utilizado via **Rede Wi-Fi Local**, permitindo o controle pel
 - **JavaScript (Vanilla)** (Fetch API, DOM Manipulation)
 - **Chart.js** (Visualização de Dados)
 
-## 🔧 Como Rodar o Projeto
-
 ### Pré-requisitos
 - Java 17+ instalado
 - Maven instalado
 - Banco de Dados (PostgreSQL ou MySQL) rodando
 
-### Passo a Passo
-
-**Clone o repositório**
-   ```bash
-   git clone [https://github.com/murilossx/myworkout.git](https://github.com/murilossx/myworkout.git)
----
-
 ## 🔮 Próximos Passos
 * [ ] Implementação de Login com Spring Security.
 * [ ] Deploy da aplicação na nuvem.
-* [ ] Perfil de usuário com medidas corporais.
-
 ---
 Desenvolvido por **[Murilo da Silva Santos]** 🚀
